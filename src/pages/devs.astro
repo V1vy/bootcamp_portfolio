@@ -1,35 +1,56 @@
 ---
-// Página con los desarrolladores
 import DeveloperCard from "../components/DeveloperCard.astro";
 
 const developers = [
   {
     name: "Viviana Jacome Sanchez",
     role: "Desarrolladora Front-End - TmSoft sas",
-    description: "Soy una desarrolladora web apasionada por crear experiencias digitales atractivas y funcionales. Con 2 años de experiencia en frontend y en constante aprendizaje como estudiante de ingeniería en sistemas, disfruto enfrentar nuevos retos y mejorar mis habilidades.",
+    description:
+      "Soy una desarrolladora web apasionada por crear experiencias digitales atractivas y funcionales. Con 2 años de experiencia en frontend y en constante aprendizaje como estudiante de ingeniería en sistemas, disfruto enfrentar nuevos retos y mejorar mis habilidades.",
     email: "vjacomesanchez@gmail.com",
-    profile:"https://acortar.link/XQuRYp",
+    profile: "https://acortar.link/XQuRYp",
     techs: [
       { name: "HTML", color: "bg-orange-500" },
       { name: "CSS", color: "bg-blue-500" },
       { name: "JavaScript", color: "bg-yellow-500" },
       { name: "React", color: "bg-teal-500" },
       { name: "Vue", color: "bg-green-500" },
-      { name: "Astro", color: "bg-red-500" }
-    ]
+      { name: "Astro", color: "bg-red-500" },
+    ],
+  },
+  {
+    name: "Rafael David Donado Carrascal ",
+    role: "Analista QA ",
+    description: "Analista de Calidad de Software (QA) encargado de garantizar que el software cumpla con los estándares de calidad y requisitos funcionales antes de su lanzamiento. Teniendo como objetivo principal detectar errores, inconsistencias y posibles problemas que puedan afectar el rendimiento o la funcionalidad de un producto.",
+    email: " rafadonado6@gmail.com",
+    profile: "https://cdn-icons-png.flaticon.com/512/4157/4157277.png",
+    techs: [
+      { name: "HTML", color: "bg-orange-500" },
+      { name: "CSS", color: "bg-blue-500" },
+      { name: "Selenium", color: "bg-teal-500" },
+    ],
   },
   {
     name: "Nombre",
     role: "Cargo",
     description: "Descripcion",
     email: "correo electronico",
-    profile:"",
+    profile: "",
     techs: [
-      { name: "Node.js", color: "bg-green-500" },
-      { name: "Express", color: "bg-gray-700" },
-      { name: "MongoDB", color: "bg-green-900" },
-      { name: "MySQL", color: "bg-blue-700" }
-    ]
+      { name: "HTML", color: "bg-orange-500" },
+      { name: "CSS", color: "bg-blue-500" },
+    ],
+  },
+  {
+    name: "Nombre",
+    role: "Cargo",
+    description: "Descripcion",
+    email: "correo electronico",
+    profile: "",
+    techs: [
+      { name: "HTML", color: "bg-orange-500" },
+      { name: "CSS", color: "bg-blue-500" },
+    ],
   },
 ];
 ---
@@ -37,15 +58,17 @@ const developers = [
 <section class="py-16 text-white flex flex-col items-center">
   <p class="text-2xl mb-8">Nuestros Desarrolladores</p>
   <div class="mx-4 my-10 lg:w-8/12">
-    {developers.map(dev => (
-      <DeveloperCard 
-        name={dev.name}
-        role={dev.role}
-        description={dev.description}
-        profile={dev.profile}
-        email={dev.email}
-        techs={dev.techs}
-      />
-    ))}
+    {
+      developers.map((dev) => (
+        <DeveloperCard
+          name={dev.name}
+          role={dev.role}
+          description={dev.description}
+          profile={dev.profile}
+          email={dev.email}
+          techs={dev.techs}
+        />
+      ))
+    }
   </div>
 </section>
