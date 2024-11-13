@@ -1,0 +1,55 @@
+---
+import Dev from "../assets/Dev.astro";
+import WhatsApp from "../assets/WhatsApp.astro";
+---
+
+<div class="flex justify-center py-16">
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-4 pb-10 mx-4 w-full lg:w-9/12">
+    <div class="flex flex-col justify-between">
+      <div class="flex flex-col">
+        <small class="text-white/80 text-sm"
+          >¿Tienes un proyecto en mente?</small
+        >
+        <small class="text-white text-xl py-2">Contactanos.</small>
+      </div>
+      <div class="my-5">
+        <small class="text-sm text-white"
+          >Si tienes preguntas, quieres colaborar o simplemente deseas saludar,
+          ¡no dudes en ponerte en contacto! Completa el formulario o envíanos un
+          mensaje directo, y te responderemos lo antes posible.</small
+        >
+      </div>
+      <div>
+        <a href="" class="flex items-center gap-4 my-4">
+          <WhatsApp />
+          <small class="text-lg text-white">WhatsApp</small>
+        </a>
+      </div>
+    </div>
+    <div class="flex justify-center flex-col items-center">
+      <Dev/>
+
+      <form class="flex flex-col gap-4 w-full sm:w-9/12 mx-4">
+        <input 
+          type="text" 
+          placeholder="Nombre" 
+          class="p-2 rounded-md border border-gray-300 bg-transparent text-white placeholder-gray-400 transition-colors"
+        />
+        <input 
+          type="email" 
+          placeholder="Correo" 
+          class="p-2 rounded-md border border-gray-300 bg-transparent text-white placeholder-gray-400 transition-colors"
+        />
+        <textarea 
+          placeholder="Mensaje" 
+          class="p-2 rounded-md border border-gray-300 bg-transparent text-white placeholder-gray-400 transition-colors"
+        ></textarea>
+        <button 
+          class="bg-blue-400 text-white p-2 rounded-md hover:bg-blue-500 transition-colors"
+        >
+          Enviar
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

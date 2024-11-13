@@ -1,0 +1,59 @@
+---
+import Gmail from "../assets/Gmail.astro";
+import BadgeTech from "../components/BadgeTech.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+---
+
+<section class="py-16 bg-gray-900">
+  <h2 class="text-center text-3xl font-semibold text-white mb-10">
+    Nuestros Proyectos
+  </h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
+    <div class="flex justify-center items-center">
+      <ProjectCard
+        title="Ecommerce"
+        description="Proyecto de tienda en línea utilizando tecnologías modernas."
+        image="https://acortar.link/QKDB0h"
+        link=""
+      >
+        <div class="flex gap-4 flex-wrap">
+          <BadgeTech color="bg-orange-500" info="HTML" />
+          <BadgeTech color="bg-blue-500" info="CSS" />
+          <BadgeTech color="bg-yellow-500" info="JavaScript" />
+          <BadgeTech color="bg-teal-500" info="React" />
+        </div>
+      </ProjectCard>
+    </div>
+    <div class="flex justify-center items-center">
+      <ProjectCard
+        title="Random Quote"
+        description="Generador de frases aleatorias utilizando una API pública."
+        image="https://acortar.link/Pa1Vlc"
+        link="https://github.com/V1vy/randomQuote"
+      >
+        <div class="flex gap-4 flex-wrap">
+          <BadgeTech color="bg-green-500" info="Vue" />
+          <BadgeTech color="bg-orange-500" info="HTML" />
+          <BadgeTech color="bg-blue-500" info="CSS" />
+          <BadgeTech color="bg-yellow-500" info="JavaScript" />
+        </div>
+      </ProjectCard>
+    </div>
+    <div class="flex justify-center items-center">
+      <ProjectCard
+        title="Portfolio"
+        description="Portafolio utilizando Astro y TailwindCSS."
+        image="https://acortar.link/MSIiOB"
+        link="#"
+      >
+        <div class="flex gap-4 flex-wrap">
+          <BadgeTech color="bg-orange-500" info="HTML" />
+          <BadgeTech color="bg-blue-500" info="CSS" />
+          <BadgeTech color="bg-yellow-500" info="JavaScript" />
+          <BadgeTech color="bg-red-500" info="Astro" />
+          <BadgeTech color="bg-teal-500" info="TailwindCSS" />
+        </div>
+      </ProjectCard>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,30 @@
+---
+import Linkedin from "../assets/Linkedin.astro";
+import Facebook from "../assets/Facebook.astro";
+import Instagram from "../assets/Instagram.astro";
+import WhatsApp from "../assets/WhatsApp.astro";
+import ButtonMedia from "./ButtonMedia.astro";
+---
+
+<footer class="bg-white py-10 flex flex-col items-center text-center">
+  <small class="text-black text-xl font-bold"
+    >Bootcamp: Programación Básica</small
+  >
+  <div class="flex flex-col sm:flex-row items-center justify-center gap-5 mt-10 mb-2">
+    <ButtonMedia info="LinkedIn" link="https://co.linkedin.com/">
+      <Linkedin />
+    </ButtonMedia>
+    <ButtonMedia info="Facebook" link="https://www.facebook.com/home">
+      <Facebook />
+    </ButtonMedia>
+    <ButtonMedia info="Instagram" link="https://www.instagram.com/">
+      <Instagram />
+    </ButtonMedia>
+    <ButtonMedia info="WhatsApp" link="https://www.whatsapp.com/">
+      <WhatsApp />
+    </ButtonMedia>
+  </div>
+  <small class="text-black py-2">
+    © 2024 Bootcamp: Programación Básica. Todos los derechos reservados</small
+  >
+</footer>

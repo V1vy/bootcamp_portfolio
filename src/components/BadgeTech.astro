@@ -1,0 +1,10 @@
+---
+interface Props {
+  color: string;
+  info: string;
+}
+
+const { color, info } = Astro.props;
+---
+
+<span class={`${color} text-white px-3 py-1 rounded-full text-sm`}> {info} </span>
